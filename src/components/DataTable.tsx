@@ -100,6 +100,7 @@ export function DataTable({ data }: DataTableProps) {
 
   return (
     <div style={{ width: '100%', height: '100%' }}>
+      <h2>Data Table</h2>
       <DataGrid
         rows={data.map((row, index) => ({ id: index, ...row }))}
         columns={columns}
